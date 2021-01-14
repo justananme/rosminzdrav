@@ -1,0 +1,133 @@
+.contentButtonsContainer{
+    margin-left: 24px; 
+    padding-bottom: 10px;
+    display: flex;
+}
+.contentButtonsContainer > div:first-child > button{
+    width: max-content;
+}
+.progTableChip{
+    margin-left: 0.5rem;
+    min-width: 2.4rem;
+    text-align: center;
+}
+.tabContainer{
+    margin: 0px 24px -20px 24px;
+}
+.balanceButtonContainer{
+    display: inline-block;
+    margin-left: 24px;
+    width: 100%;
+}
+.balanceButtonContainer button{
+    background-color: white;
+    border: 1px solid rgba(25, 118, 210, 0.5) !important;
+    color: #1976d2 !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 600;
+    line-height: 1.4 !important;
+    padding: 8px 16px !important;
+}
+.passtestsButtonContainer button{
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 600;
+    line-height: 1.4 !important;
+    padding: 8px 16px !important;
+}
+
+/*Laptop, Tablet big*/
+@media screen and (max-width: 1282px) {
+    .tabsCaption{
+        font-size: 0.85rem;
+    }
+}
+/*Tablet big, Tablet small*/
+@media screen and (max-width: 1026px) {
+    .tabsCaption{
+        font-size: 0.85rem;
+    }
+}
+
+/*Big phones*/
+@media screen and (max-width: 830px) {
+    .profile2ScoreWrapper, .profile2BalanceWrapper{
+        min-width: 58px;
+        min-height: 58px;
+    }
+    .contentButtonsContainer{
+        margin-left: 12px; 
+        margin-right: 12px;
+    }
+    .progTableChip{
+        font-size: 0.77rem !important;
+    }
+    .tabContainer{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: -7px;
+    }
+    .tabsCaption{
+        font-size: 0.72rem;
+    }
+    .progTableContainer, .progTableCompletedContainer{
+        margin-left: -13px;
+        margin-right: -13px;
+        margin-top: -13px;
+    }
+    .progTableCell{
+        font-size: 0.845rem !important;
+    }
+}
+
+/*Small*/
+@media screen and (max-width: 730px) {
+    .balanceButtonContainer{
+        margin-left: 10px;
+        margin-top: 0px;
+    }
+    .dialogInstruction > .MuiDialog-container.MuiDialog-scrollPaper > div:first-child{
+        margin: 10px !important;
+    }
+    .progTableCell{
+        font-size: 0.84rem !important;
+    }
+    .snackContentWrapper{
+        font-size: 0.84rem;
+        margin: -3px 0px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .tabsCaption{
+        font-size: 0.68rem;
+    }
+}
+
+/*Very small*/
+@media screen and (max-width: 530px) {
+    .contentButtonsContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .contentButtonsContainer  > div:first-child > button{
+        width: 100%;
+    }
+    .tabContainer .MuiTabs-flexContainer{
+        width: 100% !important;
+    }
+    .balanceButtonContainer{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    .balanceButtonContainer, .balanceButtonContainer > button{
+        width: 100%;
+    }
+    .wrapper{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    .profile2ScoreWrapper, .profile2BalanceWrapper{
+        min-width: 56px;
+        min-height: 56px;
+    }
+}

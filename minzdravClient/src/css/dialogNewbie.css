@@ -1,0 +1,44 @@
+.dialogNewbie #customized-dialog-title > h6{
+    display: none;
+}
+.dialogNewbie #customized-dialog-title > button{
+    top: 2px;
+}
+.dialogNewbie > .MuiDialog-container.MuiDialog-scrollPaper > div:first-child{
+    min-width: 300px;
+    max-height: calc(100% - 25px) !important;
+}
+.dialogNewbieContent{
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    padding: 0px 12px 12px 12px;
+}
+.dialogNewbiePoints{
+    padding-top: 12px;
+}
+.dialogNewbiePoints > div{
+    padding: 4.5px 0px;
+}
+
+/*Big phones*/
+@media screen and (max-width: 830px) {
+    .dialogNewbie #customized-dialog-title{
+        padding: 12px;
+        padding-left: 16px;
+    }
+    .dialogNewbie #customized-dialog-title > button{
+        top: 3px;
+        padding: 8px;
+    }
+    .dialogNewbie #customized-dialog-title > button svg{
+        width: 0.8em;
+        height: 0.8em;
+    }
+}
+
+/*Small*/
+@media screen and (max-width: 730px) {
+    .dialogNewbie > .MuiDialog-container.MuiDialog-scrollPaper > div:first-child{
+        margin: 10px !important;
+    }
+}

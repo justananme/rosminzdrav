@@ -1,0 +1,69 @@
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 24px 5px 18px;
+    background-color: #EF5466;
+}
+.profile2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+
+.profile2ScoreWrapper, .profile2BalanceWrapper, .profileName{
+    min-width: 62px;
+    min-height: 62px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+.profile2BalanceWrapper{
+    margin-left: 11px;
+}
+.profileName{
+    right: 0;
+    position: absolute;
+}
+.premiumTip{
+    background-color: #ffffff;
+    color: #ea3550;
+    border-radius: 20px;
+    padding: 0.5px 10px;
+    width: fit-content;
+}
+.profileCellCaptionName{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.profile2ScoreContent, .profile2BalanceContent, .profileNameContent {
+    width: 100%;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: fill-available;
+    transform: translateY(-2px);
+}
+
+.profileCellValue{
+    font-size: 1.85rem;
+    color: #ffffff;
+}
+.profileCellCaption{
+    font-size: 0.91rem;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Big phones*/
+@media screen and (max-width: 830px) {
+    .wrapper{
+        padding: 10px;
+    }
+}

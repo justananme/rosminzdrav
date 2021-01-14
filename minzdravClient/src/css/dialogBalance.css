@@ -1,0 +1,92 @@
+
+.dialogBalance #customized-dialog-title > h6{
+    display: none;
+}
+.dialogBalance > .MuiDialog-container.MuiDialog-scrollPaper > div:first-child{
+    min-width: 300px;
+    max-height: calc(100% - 25px) !important;
+}
+
+.balancePaymentDetails{
+    width: 100%;
+}
+.balancePaymentDetails > ul{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+.balancePaymentDetails > ul > li{
+    padding-top: 0px !important;
+}
+
+.dividerFullWidth{
+    margin: 5px 0 0 15px !important;
+}
+
+.dividerInset {
+    margin: 5px 0 0 15px !important;
+}
+
+.balanceItem > span{
+    font-family: 'Montserrat', sans-serif !important;
+}
+.paymentOptionsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.paymentOptions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+.paymentPrice{
+    font-size: 2rem;
+    font-weight: 300;
+}
+.paymentCaption{
+    font-size: 0.8rem;
+}
+.paymentOR{
+    font-size: 0.7rem;
+    margin: 0px 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+.paymentDescription{
+    margin: 16px;
+    margin-top: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.82rem;
+}
+.paymentDescription div:nth-child(2){
+    margin-top: 3px;
+}
+
+/*Big phones*/
+@media screen and (max-width: 830px) {
+    .dialogBalance #customized-dialog-title{
+        padding: 12px;
+        padding-left: 16px;
+    }
+    .dialogBalance #customized-dialog-title > button{
+        top: 3px;
+        padding: 8px;
+    }
+    .dialogBalance #customized-dialog-title > button svg{
+        width: 0.8em;
+        height: 0.8em;
+    }
+    
+}
+
+/*Small*/
+@media screen and (max-width: 730px) {
+    .dialogBalance > .MuiDialog-container.MuiDialog-scrollPaper > div:first-child{
+        margin: 10px !important;
+    }
+
+}

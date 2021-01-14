@@ -1,0 +1,44 @@
+/* <SERVER ERROR PAGE> */
+.errorHeader{
+    font-size: 1.25rem;
+    /* font-size: 20px; */
+    font-weight: 400;
+}
+.errorBody{
+    font-size: 0.94rem;
+    /* font-size: 18px; */
+    font-weight: 300;
+}
+.errorBody a{
+    color: grey;
+    text-decoration: underline;
+    font-size: 0.94rem;
+}
+.serverErrorWrap{
+    margin: 0px 8px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif !important;
+}
+/* </SERVER ERROR PAGE> */
+
+
+
+.preloaderContainer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.preloaderText{
+    margin-bottom: 165px;
+}
+/* error icons in table*/
+.imgError{
+    padding-right: 3px;
+    width: 13px;
+    transform: translateY(1px);
+}
