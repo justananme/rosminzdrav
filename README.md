@@ -1,3 +1,5 @@
+![index](https://sun9-64.userapi.com/impf/FUfb-j3PzFm2zvlQLWMLpkDSTW4Zbm9M1MRZeA/m1aoPhW7rgA.jpg?size=1119x603&quality=96&proxy=1&sign=8fa5e91fae2a4878c29f532352b07927&type=album)
+
 Сервис предназначен для автоматического прохождения тестов НМО на сайте [edu.rosminzdrav.ru](https://edu.rosminzdrav.ru). Просто отметьте тесты для прохождения и программа сама пройдет их.
 
 **Сервис состоит из трёх частей**:
