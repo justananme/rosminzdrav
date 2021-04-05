@@ -19,8 +19,6 @@ function okResponse(iData) {
     }
 }
 
-// const herokuProxy = "https://cors-anywhere.herokuapp.com/";
-
 export async function getIdpTicket(iLogin, iPassword, iDegree) {
     const link = "https://a.edu.rosminzdrav.ru/idp/auth?type=custom";
 
@@ -34,17 +32,8 @@ export async function getIdpTicket(iLogin, iPassword, iDegree) {
     return fetch(link, {
         method: 'POST',
         headers: {
-            'Host': 'a.edu.rosminzdrav.ru',
-            'Accept': 'application/json, text/javascript, */*; q=0.01',
-            'Accept-Language': 'en-US,en;q=0.5',
-            'Accept-Encoding': 'gzip, deflate, br',
             'Content-Type': 'application/json; charset=utf-8',
-            'X-Requested-With': 'XMLHttpRequest',
-            'Content-Length': '216',
-            'Origin': 'https://a.edu.rosminzdrav.ru',
-            'Connection': 'keep-alive',
             'Referer': 'https://a.edu.rosminzdrav.ru/idp/login.html?response_type=client-ticket&sp=https://nmfo-spo.edu.rosminzdrav.ru/#/login/',
-            'TE': 'Trailers'
         },
         body: JSON.stringify(data),
     })
@@ -80,16 +69,8 @@ export async function getToken(iIdpTicket, iDegree) {
     return fetch(link, {
         method: 'POST',
         headers: {
-            'Host': 'nmfo-spo.edu.rosminzdrav.ru',
-            'Accept': 'application/json, text/plain, */*',
-            'Accept-Language': 'en-US,en;q=0.5',
-            'Accept-Encoding': 'gzip, deflate, br',
             'Content-Type': 'application/x-www-form-urlencoded',
             'Authorization': 'Basic Y2xpZW50OnNlY3JldA==',
-            'Content-Length': '43',
-            'Origin': 'https://nmfo-spo.edu.rosminzdrav.ru',
-            'Connection': 'keep-alive',
-            'TE': 'Trailers',
         },
         body: 'idp_ticket=' + iIdpTicket,
     })
@@ -122,14 +103,8 @@ export async function getCycleProgram(iToken, iDegree) {
     return fetch(link, {
         method: 'GET',
         headers: {
-            'Host': 'nmfo-spo.edu.rosminzdrav.ru',
-            'Accept': 'application/json',
-            'Accept-Language': 'en-US,en;q=0.5',
-            'Accept-Encoding': 'gzip, deflate, br',
             'Authorization': iToken,
-            'Connection': 'keep-alive',
-            'Referer': 'https://nmfo-spo.edu.rosminzdrav.ru/',
-            'TE': 'Trailers',
+            'Referer': 'https://nmfo-spo.edu.rosminzdrav.ru/'
         }
     })
         .then(res => res.json())
@@ -161,13 +136,7 @@ export async function getZets(iToken, iDegree) {
     return fetch(link, {
         method: 'GET',
         headers: {
-            'Accept': 'application/json',
-            'Accept-Language': 'en-US,en;q=0.5',
-            'Accept-Encoding': 'gzip, deflate, br',
-            'Authorization': iToken,
-            'Connection': 'keep-alive',
-            'TE': 'Trailers',
-            'Origin': 'https://nmfo-spo.edu.rosminzdrav.ru'
+            'Authorization': iToken
         }
     })
         .then(res => res.json())
@@ -241,14 +210,7 @@ async function getIomProgramsCompleted_loc(iToken, iCycleId, iDegree) {
     return fetch(link, {
         method: 'GET',
         headers: {
-            'Accept': 'application/json',
-            'Accept-Language': 'en-US,en;q=0.5',
-            'Accept-Encoding': 'gzip, deflate, br',
-            'Authorization': iToken,
-            'Content-Type': 'application/json',
-            'Connection': 'keep-alive',
-            'TE': 'Trailers',
-            'Origin': 'https://nmfo-spo.edu.rosminzdrav.ru'
+            'Authorization': iToken
         },
     })
         .then(res => res.json())
@@ -294,14 +256,9 @@ async function getIomPrograms_loc(iToken, iCycleId, iProgramId, iDegree) {
     return fetch(link, {
         method: 'POST',
         headers: {
-            'Accept': 'application/json',
-            'Accept-Language': 'en-US,en;q=0.5',
-            'Accept-Encoding': 'gzip, deflate, br',
-            'Authorization': iToken,
             'Content-Type': 'application/json',
-            'Connection': 'keep-alive',
-            'TE': 'Trailers',
-            'Origin': 'https://nmfo-spo.edu.rosminzdrav.ru'
+            'Authorization': iToken
+
         },
         body: JSON.stringify(data),
     })
@@ -368,13 +325,7 @@ export async function getName(iToken, iDegree) {
     return fetch(link, {
         method: 'GET',
         headers: {
-            'Accept': 'application/json',
-            'Accept-Language': 'en-US,en;q=0.5',
-            'Accept-Encoding': 'gzip, deflate, br',
-            'Authorization': iToken,
-            'Connection': 'keep-alive',
-            'TE': 'Trailers',
-            'Origin': 'https://nmfo-spo.edu.rosminzdrav.ru'
+            'Authorization': iToken
         }
     })
         .then(res => res.json())
