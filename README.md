@@ -25,7 +25,7 @@
 - password - пароль
 - vip - неограниченный доступ к тестам (поле queries_left при значении vip true игнорируется)
 - queries_left - количество тестов, которое доступно пользователю для прохождения
-- queries_made - количество тестов, которые пользователя прошел с помощью нашей системы
-- query_last - дата последенго входа пользователя в нашу систему
+- queries_made - количество тестов, которые пользователя прошел с помощью системы
+- query_last - дата последенго входа пользователя в систему
 
 ![pass tests](https://sun9-71.userapi.com/impf/-XzI-TmSB24NjHiKWYHaKs3mzSinUYeN2IxgZg/F3yOkVR1WyU.jpg?size=1400x690&quality=96&proxy=1&sign=2e1f5a904b9f8e58450384d7a17d32f1&type=album)
